@@ -20,3 +20,24 @@
 .App-link {
   color: #09d3ac;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color:rgba(86, 209, 240, 0.274);
+  border: 5px solid white;
+  box-shadow: 10px 7px 32px -5px rgba(0, 136, 199, 0.75);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(66, 139, 168);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(88, 0, 160);  
+}
