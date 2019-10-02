@@ -1,0 +1,45 @@
+.home{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    transform: translateY(-4.5rem);
+    background-color:rgba(139, 139, 139, 0.274);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    font-weight: bold;
+}
+.home-Hearts{
+    text-align: center;
+    margin-top: 1rem;
+    transform: translateY(-.5rem);
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    & img{
+        margin: 0 .5rem 0 .5rem;
+    }
+}
+.bounce1{
+    animation: bounce 3s infinite;
+}
+.bounce2{
+    animation: bounce 3.2s infinite;
+}
+.bounce3{
+    animation: bounce 3.4s infinite;
+}
+.bounce4{
+    animation: bounce 3.6s infinite;
+}
+.bounce5{
+    animation: bounce 3.8s infinite;
+}
+@keyframes bounce{
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-.5rem); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-.2rem); }
+    64%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
