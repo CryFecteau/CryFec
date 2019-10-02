@@ -1,0 +1,73 @@
+@import '../../sharedScss/media.scss';
+.contacts{
+    font-family: 'Courier New', Courier, monospace;
+    transform: translateY(-7rem);
+}
+.contacts-Header{
+    text-align: center;
+    font-weight: bolder;
+    -webkit-text-stroke: .5px rgb(252, 252, 252);
+    filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+}
+.contacts-BitFace{
+    background-color: rgba(98, 0, 190, 0.527);
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    margin: 0 auto;
+    border: 5px double black;
+    box-shadow: -1px 7px 32px -5px rgba(0,0,0,0.75);
+    & img{
+        height: 12rem;
+        display: block;
+        margin: 0 auto;
+        transform: translateY(.5rem);
+        filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+    }
+}
+.contacts-Box{
+    display: flex;
+    justify-content: center;
+}
+.contacts-InfoContainer{
+    padding: 1rem;
+    & p{
+        border: 5px solid rgb(0, 0, 0);
+        background-color: rgba(139, 139, 139, 0.274);
+        border-radius: 10px;
+        width: 40rem;
+        padding: 0 0 1rem 1.5rem;
+        font-weight: bold;
+        box-shadow: -1px 7px 32px -5px rgba(0,0,0,0.75);
+        filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+    }
+    & img{
+        height: 3rem;
+        margin-right: .5rem;
+        transform: translateY(.7rem);
+    }
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.fade-in{
+    animation: fade 2s;
+}
+@include Phone-Large{
+    .contacts-InfoContainer {
+        & p{
+            width: 17rem;
+        }
+        & img{
+            margin-bottom: .5rem;
+            height: 2rem;
+        }
+    }
+}
+@include Phone-Small{
+    .contacts-InfoContainer p{
+        width: 15rem;
+    }
+}
+   

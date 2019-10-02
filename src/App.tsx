@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import { Header } from './components/header/Header';
 import { NavBar } from './components/navBar/NavBar';
-import { HomePage } from './main-components/home-page/HomePage';
 import { Footer } from './components/footer/Footer';
+import { Contacts } from './components/contacts/Contacts';
 
 
 
@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <div>
    <Header/>
    <NavBar />
-   <HomePage />
+   <Contacts />
    <Footer />
     </div>
   );
