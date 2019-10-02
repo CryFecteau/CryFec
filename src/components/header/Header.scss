@@ -1,0 +1,278 @@
+@import '../../sharedScss/media.scss';
+// style for cloud animation and flow
+.cloudBox{ 
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 10rem;
+    transform: translateY(-16rem);
+    
+}
+.clouds img{
+    height: 15rem;
+}
+.cloud-set div{
+    display: block;
+    position: absolute;
+}
+.c-set1 div:nth-child(1){
+    left: 110%;
+    top: 30%;
+    animation: flow 25s linear infinite, fade 3s infinite alternate;
+    opacity: .5;
+}
+.c-set1 div:nth-child(2){
+    left: 110%;
+    top: 30%;
+    animation: flow 29s linear infinite, fade 3s infinite alternate;
+}
+.c-set1 div:nth-child(3){
+    left: 110%;
+    top: -10%;
+    animation: flow 35s linear infinite, fade 5s infinite alternate;
+    opacity: .5;
+}
+.c-set2 div:nth-child(1){
+    left: 110%;
+    top: -2%;
+    animation: flow 33s linear infinite, fade 4s infinite alternate;
+}
+.c-set2 div:nth-child(2){
+    left: 110%;
+    top: -10%;
+    animation: flow 27s linear infinite, fade 3s infinite alternate;
+}
+.c-set2 div:nth-child(3){
+    left: 110%;
+    top: 45%;
+    animation: flow 30s linear infinite, fade 5s infinite alternate;
+    opacity: .7;
+}
+@keyframes flow{
+    from {left:-20%;}
+    to{right:100%};
+}
+@keyframes fade{
+    from { opacity: 0;}
+}
+// style for rain animation
+.rainBox{
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    background: rgb(248, 212, 119);
+    background: linear-gradient(0deg, rgba(255,184,0,0) 2%, rgba(196,150,57,0.35057773109243695) 6%, rgba(198,144,85,0.44021358543417366) 11%, rgba(200,135,131,0.5998774509803921) 19%, rgba(202,142,142,0.7399334733893557) 24%, rgba(204,149,191,0.8743872549019608) 32%, rgba(206,155,227,1) 38%, rgba(181,131,219,1) 58%, rgba(186,43,251,1) 100%);
+    overflow: hidden;
+    z-index: -1;
+}
+.rain{
+    background-color: rgb(115, 206, 214);
+    transform: skewY(50deg);
+    width: 1.5px;
+    height: 5px;
+}
+.rainSet{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+.rainSet div{
+    position: absolute;
+    display: block;
+}
+.rainSet div:nth-child(1){
+    left: 25%;
+    animation: animate .5s linear infinite;
+}
+.rainSet div:nth-child(2){
+    left: 45%;
+    animation: animate .7s linear infinite;
+}
+.rainSet div:nth-child(3){
+    left: 70%;
+    animation: animate .5s linear infinite;
+}
+.rainSet div:nth-child(4){
+    left: 0%;
+    animation: animate 1s linear infinite;
+}
+.rainSet div:nth-child(5){
+    left: 75%;
+    animation: animate .9s linear infinite;
+}
+.rainSet div:nth-child(6){
+    left: 2%;
+    animation: animate .5s linear infinite;
+}
+.rainSet div:nth-child(7){
+    left: 15%;
+    animation: animate .7s linear infinite;
+}
+.rainSet div:nth-child(8){
+    left: 60%;
+    animation: animate .8s linear infinite;
+}
+.set2{
+    transform: scale(2);
+    filter: blur(2px);
+}
+.set3{
+    transform: scale(1);
+    filter: blur(4px);
+}
+.set4{
+    transform: scale(1.5);
+}
+.set5{
+    transform: scale(2);
+}
+@keyframes animate{
+        from {top:-1rem;}
+        to {top:15rem;}
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    10%{
+        opacity: 1;
+    }
+}
+//style for title and animation
+.logo{
+    display: flex;
+    justify-content: center;
+    & img{
+        height: 20rem;
+        filter: drop-shadow(5px 5px 5px rgb(219, 194, 81));
+    }
+}
+.textBox{
+    color: white;
+    transform: translateY(-16rem);
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+    text-shadow: 3px 3px 6px black;
+}
+.text{
+    display: block;
+    transform: translateY(-1rem);
+}
+.header{
+    transform: translateY(-27rem);
+    height: 0;
+}
+.city{
+    display: flex;
+    align-items: flex-start;
+    & img{
+        height: 20rem;
+        transform: translateY(-32rem);
+        z-index: -2;
+    }
+}
+.text:after{
+    content: "";
+    font-weight: bold;
+    animation: changeText 17s linear infinite;
+}
+@keyframes changeText{
+    0%{ 
+        color: red;
+        content: "Creative";
+    }
+    20%{ 
+        color: orange;
+        content: "Motivated";
+    }
+    40%{
+        color: yellow;
+        content: "Passionate";
+    }
+    60%{
+        color: green;
+        content: "Confident";
+    }
+    80%{
+        color:blue;
+        content: "Sociable";
+    }
+    100%{
+        color: purple;
+        content: "Reliable";
+    }
+}
+@include Laptop{
+    .rainBox{
+        height: 17rem;
+    }
+    .logo img{
+        height: 16rem;
+    }
+    .header{
+        transform: translateY(-23rem);
+    }
+    .textBox{
+        font-size: 1rem;
+        transform: translateY(-12rem);
+    }
+    .city{
+        transform: translateY(5rem);
+    }
+}
+@include Tablet{
+    .logo img{
+        height: 15rem;
+    }
+    .textBox{
+        transform: translateY(-11rem);
+    }
+    .city{
+        transform: translateY(10rem);
+        & img{
+            height: 15rem;
+        }
+    }
+}
+@include Phone-Large{
+    .rainBox{
+        height: 15rem;
+    }
+    .clouds img{
+        height: 9rem;
+    }
+    .c-set1 div:nth-child(1){
+        animation: flow 15s linear infinite, fade 6s infinite alternate;
+    }
+    .c-set1 div:nth-child(2){
+        animation: flow 19s linear infinite, fade 6s infinite alternate;
+    }
+    .c-set1 div:nth-child(3){
+        animation: flow 25s linear infinite, fade 10s infinite alternate;
+    }
+    .c-set2 div:nth-child(1){
+        animation: flow 23s linear infinite, fade 8s infinite alternate;
+    }
+    .c-set2 div:nth-child(2){
+        animation: flow 17s linear infinite, fade 6s infinite alternate;
+    }
+    .c-set2 div:nth-child(3){
+        animation: flow 20s linear infinite, fade 10s infinite alternate;
+    }
+    .header{
+        transform: translateY(-22rem);
+    }
+    .textBox{
+        transform: translateY(-8rem);
+        font-size: 1.3rem;
+    }
+    .logo img{
+        height: 10rem;
+    }
+    .city{
+        transform: translateY(17.5rem);
+        & img {
+            height: 10rem;
+        }
+    }
+}

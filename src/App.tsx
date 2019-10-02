@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.scss';
-import { StartPage } from './main-components/start-page/StartPage';
+import { Header } from './components/header/Header';
+import { NavBar } from './components/navBar/NavBar';
+
+
 
 const App: React.FC = () => {
   return (
-   <StartPage/>
+    <div>
+   <Header/>
+   <NavBar />
+    </div>
   );
 }
 
