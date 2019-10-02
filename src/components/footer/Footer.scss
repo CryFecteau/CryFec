@@ -1,0 +1,46 @@
+@import '../../sharedScss/media.scss';
+.footer{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer-Header{
+    & h2{
+        margin-top: -.5rem;
+    }
+    & p{
+        color: lightblue;
+    }
+}
+.footer-Thankyou{
+    padding: 1rem;
+    margin-top: -2rem;
+    & span{
+        display: block;
+    }
+    & .footer-btn{
+        display: inline-block;
+        transform: translateY(.5rem);
+        text-decoration: none;
+        color: black;
+        padding: .5rem;
+        font-weight: bold;
+        text-align: start;
+        background-color: rgb(146, 77, 146);
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+.footer-Links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & a{
+        text-decoration: none;
+        border-bottom: 1px rgb(127, 255, 238) solid;
+        margin: .5rem;
+        color: rgb(143, 177, 189);
+    }
+}
