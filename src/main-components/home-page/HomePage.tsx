@@ -17,12 +17,11 @@ export class HomePage extends Component<IHomePageProps, IHomePageState>{
                     <img className='bounce5' src='assets/pixelArt/emptyHeart.png' alt='pixel drawing of a heart' />
                 </div>
                 <div className='home'>
-                    <h2>Welcome To CryHacFec</h2>
-                    <span>Hello Player1 and welcome to my portfolio. This website diplays my creativity and love of designing UI and UX. All the assest are drawn by yours truely. Take a look around and let me know what you think. </span>
+                    <h2>Welcome Player1 To CryHacFec!</h2>
+                    <p>This is a portfolio page to demonstrate my creativity by drawing and designing the assets you see before you as well as experience working with CSS, SCSS, React and TypeScript. But my skills don't end there if you would like to know more about me take a look around. Also, don't forget to share it with your friends or family, it mobile friendly!</p>
                     <h3>Enjoy!</h3>
                 </div>
             </div>
-
         )
     }
 }

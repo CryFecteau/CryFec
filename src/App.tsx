@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import { HomePage } from './main-components/home-page/HomePage';
+import { Quit } from './main-components/quit-page/Quit';
 
 const App: React.FC = () => {
   return (
-   <HomePage/>
+   <Quit/>
   );
 }
 
