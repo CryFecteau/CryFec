@@ -1,0 +1,361 @@
+@import '../../sharedScss/media.scss';
+.projects-Bar{
+    text-align: center;
+    margin-top: -9rem;
+    height: 10px;
+    border-top: 7px ridge rgba(255, 253, 253, 0.28);
+    background: rgb(5,180,141);
+    background: radial-gradient(circle, rgba(5,180,141,1) 0%, rgba(5,180,141,1) 0%, rgba(12,167,132,1) 9%, rgba(12,167,133,0.9346113445378151) 15%, rgba(11,170,134,0.8673844537815126) 22%, rgba(32,159,131,0.788953081232493) 25%, rgba(37,179,147,0.6881127450980392) 33%, rgba(40,144,121,0.592874649859944) 56%, rgba(87,139,127,0.542454481792717) 74%, rgba(90,135,125,0.38279061624649857) 76%, rgba(146,190,180,0.3575805322128851) 79%, rgba(118,176,163,0.26514355742296913) 87%, rgba(100,117,113,0.1923144257703081) 94%, rgba(58,61,61,0) 98%);
+}
+.projects-Name{
+    text-align: center;
+    margin-top: -6rem;
+    filter: drop-shadow(5px 5px 5px rgb(73, 73, 73));
+    & img{
+        height: 10rem;
+    }
+}
+.projects-Container{
+    transform: translateY(-2rem);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    & .slider-Img{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+.joust-Container{
+    margin: 0 2.5rem 0 3rem;
+}
+.stratego-Container{
+    margin: 0 2.5rem 0 3rem;
+}
+.zombit-Container{
+    margin: 0 2.5rem 0 3rem;
+}
+.dnd-Container{
+    margin: 0 2.5rem 0 3rem;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.projects-Box{
+    margin-bottom: 11.3rem;
+    border-bottom: 4px dashed rgb(255, 255, 255);
+    height: 8rem;
+    width: 20rem;
+    transform: translateY(19.5rem) translateX(.3rem);
+    background-color: rgba(25, 247, 217, 0.699);
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+    position: relative;
+    z-index: -1;
+}
+.detailBox{
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+    width: 19rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    text-shadow: 3px 3px 6px rgba(77, 76, 76, 0.753);
+    background-color:rgba(95, 95, 95, 0.425);
+    border: 5px solid white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    transform: translateY(.7rem);
+    & span{
+        font-size: 1.7rem;
+    }
+    & p{
+        transform: translateY(-.7rem);
+    }
+    & a{
+        transform: translateY(1rem);
+        margin-top: 1rem;
+        width: 8rem;
+        height: 1.5rem;        
+        box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+        background:linear-gradient(to bottom, #4b049c 5%, #551e6e 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+        background-color:#40006b;
+        border-radius: 5px;
+        border:2px solid #000000;
+        display:inline-block;
+        color:#ffffff;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    & a:hover{
+        color: rgb(61, 199, 187);
+    }
+}
+.toolBox{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-4.5rem);
+    margin-bottom: -5rem;
+    z-index: 3;
+    & img{
+        width: 5rem;
+        height: 5rem;
+        margin: -1rem;
+    }
+}
+.item-ToolTextProjs{
+    visibility: hidden;
+    width: 80%;
+    background-color: black;
+    border: 3px solid rgb(3, 131, 114);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-5.5rem) translateY(3rem);
+}
+.item-HoverBoxProjs:hover .item-ToolTextProjs{
+    visibility: visible;
+}
+.icon img{
+    height: 2.5rem;
+    width: 2.5rem;
+    transform: translateY(.7rem) translateX(1rem);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    transition: .5s ease;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.slider:hover .overlay {
+    opacity: 1;
+}
+.popText {
+    background-color: rgba(66, 66, 66, 0.685);
+    border-radius: 5px;
+    position: absolute;
+    width: 17rem;
+    height: 17rem;
+    text-align: center;
+    transform: translateX(5px) translateY(5px);
+}
+.popText a{
+    display: block;
+    top: 50%;
+    text-decoration: none;
+    color: white;
+}
+.slider{ 
+    position:relative;
+}
+.slider img{ 
+    position:absolute; 
+    opacity:0; 
+    animation: projs 15s infinite;
+    background-color:rgba(139, 139, 139, 0.274);
+    border: 5px solid white;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+}
+.slider img:nth-child(1) { 
+    animation-delay: 5s;  
+}
+.slider img:nth-child(2) { 
+    animation-delay: 10s;  
+}
+.slider img:nth-child(3) { 
+    animation-delay: s;  
+}
+@keyframes projs {
+    0%   { opacity: 0; }
+    11.11%   { opacity: 1; }
+    33.33%  { opacity: 1; }
+    44.44%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+.fade-in{
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@include Laptop-Large{
+    .projects-Container {
+        & .slider-Img{
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+    .detailBox{
+        width: 15rem;
+        margin-top: -3.9rem;
+    }
+    .projects-Box{
+        width: 16.7rem;
+        transform: translateY(16rem);
+    }
+    .detail a{
+        transform: translateY(-.2rem);
+    }
+}
+@include Laptop{
+    .projects-Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box4";
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        & .slider-Img{
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+    .detailBox{
+        width: 14rem;
+        margin-top: -5rem;
+    }
+    .projects-Box{
+        width: 15.5rem;
+        transform: translateY(15rem);
+    }
+    .detail {
+        & a{
+            transform: translateY(-.2rem);
+        }
+    }
+    
+    .joust-Container{
+        margin: 0 6rem 2rem 2rem;
+    }
+    .stratego-Container{
+        margin: 0 6rem 2rem 2rem;
+    }
+    .zombit-Container{
+        margin: 1rem 6rem 0 2rem;
+    }
+    .dnd-Container{
+        margin: 1rem 6rem 0 2rem;
+    }
+}
+@include Tablet{
+    .projects-Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "box1 box2"
+            "box3 box4";
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        & .slider-Img{
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+    .detailBox{
+        width: 14rem;
+        margin-top: -5rem;
+    }
+    .projects-Box{
+        width: 15.5rem;
+        transform: translateY(15rem);
+    }
+    .detail {
+        & a{
+            transform: translateY(-.2rem);
+        }
+    }
+    .joust-Container{
+        margin: 0 3rem 2rem 2rem;
+    }
+    .stratego-Container{
+        margin: 0 3rem 2rem 2rem;
+    }
+    .zombit-Container{
+        margin: 1rem 3rem 0 2rem;
+    }
+    .dnd-Container{
+        margin: 1rem 3rem 0 2rem;
+    }
+}
+@include Phone-Large{
+    .projects-Container{
+        flex-direction: column;
+    }
+    .joust-Container{
+        margin: 0 3rem 2rem 2rem;
+    }
+    .stratego-Container{
+        margin: 0 3rem 2rem 2rem;
+    }
+    .zombit-Container{
+        margin: 1rem 3rem 0 2rem;
+    }
+    .dnd-Container{
+        margin: 1rem 3rem 0 2rem;
+    }
+}
+@include Phone-Medium{
+    .projects-Container{
+        & .slider-Img{
+            height: 15rem;
+            width: 15rem;
+        }
+    }
+    .detailBox{
+        width: 14rem;
+        margin-top: -5rem;
+    }
+    .projects-Box{
+        width: 15.5rem;
+        transform: translateY(15rem);
+    }
+    .detail {
+        & a{
+            transform: translateY(-.3rem);
+        }
+    }
+}
+@include Phone-Small{
+    .joust-Container{
+        margin-bottom: 2rem;
+    }
+    .stratego-Container{
+        margin-bottom: 2rem;
+    }
+    .zombit-Container{
+        margin-bottom: 2rem;
+    }
+    .dnd-Container{
+        margin-bottom: 2rem;
+    }
+}

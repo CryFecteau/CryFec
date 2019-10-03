@@ -4,6 +4,7 @@ import { Header } from './components/header/Header';
 import { NavBar } from './components/navBar/NavBar';
 import { Footer } from './components/footer/Footer';
 import { Bio } from './components/bio/Bio';
+import { Projects } from './components/projects/Projects';
 
 
 
@@ -12,7 +13,7 @@ const App: React.FC = () => {
     <div>
    <Header/>
    <NavBar />
-   <Bio />
+  <Projects />
    <Footer />
     </div>
   );
