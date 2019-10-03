@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 export interface IFooterProps {
@@ -15,8 +16,9 @@ export class Footer extends Component<IFooterProps, IFooterState>{
                     <h2>Crystal Fecteau</h2>
                 </div>
                 <div className="footer-Thankyou">
-                    <p>Thank you for visting my portfolio! If you're in need of a developer then look no further.</p>
-                    <a className='footer-btn'>Contacts</a>
+                    <p>Thank you for visting my portfolio!</p>
+                    <p>If you're in need of a developer then look no further.</p>
+                    <Link to="/contacts" className='footer-btn'>Contacts</Link>
                 </div>
                 <div className="footer-Links">
                     <a href='https://www.linkedin.com/in/crystal-fecteau/'>Linkedin</a>

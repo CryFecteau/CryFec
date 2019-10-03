@@ -15,6 +15,19 @@
         height: 10rem;
     }
 }
+.projects-Descript{
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    margin: 0 auto 3rem auto;
+    height: 12rem;
+    width: 60%;
+    background-color:rgba(139, 139, 139, 0.274);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    font-weight: bold;
+}
 .projects-Container{
     transform: translateY(-2rem);
     position: relative;
@@ -203,6 +216,29 @@
         opacity: 1;
     }
 }
+@include Desktop{
+    .projects-Container {
+        & .slider-Img{
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+    .popText{
+        height: 16rem;
+        width: 16rem;
+    }
+    .detailBox{
+        width: 15rem;
+        margin-top: -3.9rem;
+    }
+    .projects-Box{
+        width: 16.7rem;
+        transform: translateY(16rem);
+    }
+    .detail a{
+        transform: translateY(-.2rem);
+    }
+}
 @include Laptop-Large{
     .projects-Container {
         & .slider-Img{
@@ -237,6 +273,10 @@
             height: 15rem;
             width: 15rem;
         }
+    }
+    .popText{
+        height: 15rem;
+        width: 15rem;
     }
     .detailBox{
         width: 14rem;
@@ -280,6 +320,10 @@
             height: 15rem;
             width: 15rem;
         }
+    }
+    .popText{
+        height: 15rem;
+        width: 15rem;
     }
     .detailBox{
         width: 14rem;
@@ -330,6 +374,10 @@
             height: 15rem;
             width: 15rem;
         }
+    }
+    .popText{
+        height: 15rem;
+        width: 15rem;
     }
     .detailBox{
         width: 14rem;

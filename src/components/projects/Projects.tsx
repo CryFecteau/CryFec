@@ -13,6 +13,19 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                 <div className='projects-Name'>
                     <img src='assets/pixelArt/project.png' alt='pixel drawing of the word projects' />
                 </div>
+                <div className="projects-Descript">
+                    <p>Here are a few of my favorite projects I have made working in a team.</p>
+                    <ul>
+                        <li>Joust: two-player game that lets you fly around with your friend and lance enemies... or your friend (no judgment)</li>
+                        <br />
+                        <li>Stratego: two-player strategy game that is a mix of chess, checkers, and luck (yes we got the inspiration from the actual board game)</li>
+                        <br />
+                        <li>Zombit Tavern: a place where zombies can live their best lives by drinking a beer or two</li>
+                        <br />
+                        <li>DnD Character Generator: choose your name, gender, and race to see your new character image and stats</li>
+                    </ul>
+                    <p>Go ahead and test them out!</p>
+                </div>
                 <div className="projects">
                     <div className='projects-Container'>
                         <div className="joust-Container">

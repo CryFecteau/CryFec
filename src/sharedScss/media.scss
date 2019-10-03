@@ -1,6 +1,6 @@
 
 @mixin Desktop {
-    @media only screen and (min-width: 1600px) and (max-width: 1800px){
+    @media only screen and (max-width: 1900px){
       @content;
     }
   }
@@ -20,7 +20,7 @@
     }
   }
   @mixin Phone-Large{
-    @media only screen and (max-width: 425px){
+    @media only screen and (max-width: 430px){
       @content;
     }
   }
@@ -30,7 +30,7 @@
     }
   } 
   @mixin Phone-Small{
-    @media only screen and (max-width: 320px){
+    @media only screen and (max-width: 325px){
       @content;
     }
   }

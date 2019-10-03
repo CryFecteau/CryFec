@@ -1,7 +1,7 @@
 @import '../../sharedScss/media.scss';
 .quit{
     background: rgb(54, 54, 54);
-    height: 100%;
+    height: 110%;
     width: 100%;
     position: absolute;
     & img{
@@ -39,9 +39,20 @@
         text-shadow: 0 0 5px #fff, 0 0 10px #ff67ff, 0 0 10px #ff67ff, 0 0 15px #ff67ff, 0 0 15px #ff67ff, 0 0 24px #ff67ff, 0 0 20px #ff67ff;
       }
 }
+@include Laptop-Large{
+    .quit {
+        & img{
+            margin: 5rem auto 0 auto;
+            height: 20rem;
+        }
+    }
+}
 @include Laptop{
-    .quit img{
-        height: 20rem;
+    .quit {
+        & img{
+            margin: 4rem auto 0 auto;
+            height: 20rem;
+        }
     }
 }
 @include Tablet{

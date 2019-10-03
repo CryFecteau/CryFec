@@ -1,6 +1,7 @@
 @import '../../sharedScss/media.scss';
 .skills-Container{
     font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
 }
 .skills-Bar{
     text-align: center;
@@ -37,7 +38,7 @@
 }
 .skills-ExperienceBox{
     padding: 1rem;
-    margin-left: 2rem;
+    // margin-left: 2rem;
     & p{
         font-weight: bold;
     }
@@ -124,6 +125,14 @@
 }
 .fade-in{
     animation: fade 2s;
+}
+@include Desktop{
+    .skills{ 
+        width: 85rem;
+    }
+    .skills-Box {
+        margin-left: 1rem;
+    }
 }
 @include Laptop-Large{
     .skills{
@@ -263,6 +272,10 @@
 }
 @include Phone-Small{
     .skills{
-        width: 19rem;
+        margin-left: -1rem;
+        width: 17rem;
+    }
+    .skills-Box{
+        margin-left: -.5rem;
     }
 }
