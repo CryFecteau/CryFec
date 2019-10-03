@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Quit.scss';
 
 export interface IQuitProps {
@@ -13,7 +14,7 @@ export class Quit extends Component<IQuitProps, IQuitState>{
                 <img src='assets/pixelArt/GameOver.png' alt="pixel art of the words game over" />
                 <div className="quit-Text">
                     <p>Select Start To Try Again</p>
-                    <a className='quit-Link'>Start</a>
+                    <Link to='/home' className='quit-Link'>Start</Link>
                 </div>
             </div>
         )

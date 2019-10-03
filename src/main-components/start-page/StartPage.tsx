@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './StartPage.scss';
 
 
@@ -24,12 +25,14 @@ export class StartPage extends Component<IStartPageProps, IStartPageState>{
                         <img src='assets/pixelArt/stromCloud3.png' alt='pixel storm cloud' />
                         <img src='assets/pixelArt/stromCloud1.png' alt='pixel storm cloud' />
                     </div>
-                        <div className='startPage-SunSet'>
-                            <img className='startPage-CitySunSet' src='assets/pixelArt/city.png' alt='pixel city with a calming sunset' />
-                        </div>
+                        <Link to='/home'>
+                            <div className="startPage-SunSet">
+                                <img className="startPage-CitySunSet" src='assets/pixelArt/city.png' alt="pixel city with a calming sunset" />
+                            </div>
+                        </Link>
                     <div className='startPage-Opitions'>
-                        <a  className='link'>Start</a>
-                        <a  className='link'>Quit</a>
+                        <Link to='/home' className='link'>Start</Link>
+                        <Link to='/quitter' className='link'>Quit</Link>
                     </div>
                 </div>
             </div>

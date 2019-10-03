@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.scss';
 
 export interface INavBarProps {
@@ -9,10 +10,10 @@ export class NavBar extends Component<INavBarProps, INavBarState>{
     render() {
         return (
             <div className='navBar-Container'>
-                <a  className='navBar-links'>About</a>
-                <a  className='navBar-links'>Skills</a>
-                <a  className='navBar-links'>Projects</a>
-                <a  className='navBar-links'>Contacts</a>
+                <Link to="/about" className='navBar-links'>About</Link>
+                <Link to="/skills" className='navBar-links'>Skills</Link>
+                <Link to="/projects" className='navBar-links'>Projects</Link>
+                <Link to="/contacts" className='navBar-links'>Contacts</Link>
             </div>
         )
     }
