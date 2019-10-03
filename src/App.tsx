@@ -3,7 +3,7 @@ import './App.scss';
 import { Header } from './components/header/Header';
 import { NavBar } from './components/navBar/NavBar';
 import { Footer } from './components/footer/Footer';
-import { Contacts } from './components/contacts/Contacts';
+import { Bio } from './components/bio/Bio';
 
 
 
@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <div>
    <Header/>
    <NavBar />
-   <Contacts />
+   <Bio />
    <Footer />
     </div>
   );
