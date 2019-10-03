@@ -5,6 +5,7 @@ import { NavBar } from './components/navBar/NavBar';
 import { Footer } from './components/footer/Footer';
 import { Bio } from './components/bio/Bio';
 import { Projects } from './components/projects/Projects';
+import { Skills } from './components/skills/Skills';
 
 
 
@@ -13,7 +14,7 @@ const App: React.FC = () => {
     <div>
    <Header/>
    <NavBar />
-  <Projects />
+  <Skills />
    <Footer />
     </div>
   );

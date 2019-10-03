@@ -1,0 +1,265 @@
+@import '../../sharedScss/media.scss';
+.skills-Container{
+    font-family: 'Courier New', Courier, monospace;
+}
+.skills-Bar{
+    text-align: center;
+    margin-top: -9rem;
+    height: 10px;
+    border-top: 7px ridge rgba(255, 253, 253, 0.28);
+    background: rgb(135,22,198);
+    background: radial-gradient(circle, rgba(135,22,198,0.8589810924369747) 0%, rgba(210,128,255,1) 0%, rgba(190,106,236,0.9304096638655462) 9%, rgba(176,92,223,0.9220063025210083) 15%, rgba(161,75,208,0.8995973389355743) 22%, rgba(154,68,202,0.8519782913165266) 25%, rgba(136,48,185,0.8337710084033614) 33%, rgba(138,110,154,0.6937149859943977) 56%, rgba(138,123,148,0.6110819327731092) 74%, rgba(138,124,147,0.5522584033613445) 76%, rgba(169,129,195,0.4318102240896359) 79%, rgba(176,165,185,0.3477766106442577) 87%, rgba(138,131,143,0.23853291316526615) 94%, rgba(139,139,139,0) 98%);
+}
+.skills-Name{
+    text-align: center;
+    margin-top: -6rem;
+    margin-bottom: -1rem;
+    filter: drop-shadow(5px 5px 5px rgb(73, 73, 73));
+    & img{
+        height: 10rem;
+    }
+}
+.skills{
+    margin: 0 auto 4rem auto;
+    width: 100rem;
+    display: flex;
+    background-color:rgba(139, 139, 139, 0.274);
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 7px 32px -5px rgba(0,0,0,0.75);
+    filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
+}
+.skills-ExperienceBoxHeader{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.skills-ExperienceBox{
+    padding: 1rem;
+    margin-left: 2rem;
+    & p{
+        font-weight: bold;
+    }
+    & img{
+        transform: translateY(.6rem);
+    }
+}
+.fullHeart{
+    margin-right: -.5rem;
+}
+.skills-ProgressBarContainer{
+    width: 39rem;
+    margin-bottom: 2rem;
+    transform: translateX(2rem);
+}
+.skills-ProgressBar{
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+.skills-ProgressBarFill{
+    display: block;
+    height: 1.5rem;
+    width: 65%;
+    background-color: #a565ef;
+    border-radius: 3px; 
+    & p {
+        transform: translateY(3px) translateX(70%);
+    } 
+}
+.skills-Hearts{
+    & img{
+        height: 3rem;
+    }
+    & p{
+        font-size: 2rem;
+    }
+}
+.skills-BoxHeader{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.skills-Box{
+    padding: 1rem;
+    overflow: auto;
+    margin-left: 10rem;
+    & img{
+        height: 10rem;
+        margin-bottom: -1rem;
+    }
+}
+.skills-BoxGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  
+}
+.gridItem .item-ToolText{
+    visibility: hidden;
+    width: 10rem;
+    background-color: black;
+    border: 3px solid rgb(3, 131, 114);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-10rem) translateY(-.5rem);
+}
+.gridItem:hover .item-ToolText{
+    visibility: visible;
+}
+
+#Icon{
+    height: 8rem;
+    transform: translateY(1.5rem);
+}
+#IconText{
+    transform: translateX(-9rem) translateY(-.5rem);
+}
+.fade-in{
+    animation: fade 2s;
+}
+@include Laptop-Large{
+    .skills{
+        width: 85rem;
+        margin: 0 auto;
+    }
+    .skills-Hearts{
+        & img{
+            height: 2.5rem;
+        }
+        & p{
+            font-size: 1.3rem;
+        }
+        
+    }
+    .skills-Box {
+        margin-left: 1rem;
+    }
+}
+@include Laptop{
+    .skills-ProgressBarContainer{
+        margin: 0 auto;
+    }
+    .skills{
+        flex-direction: column;
+        width: 60rem;
+        margin: 0 auto;
+    }
+    .skills-Hearts{
+        & img{
+            height: 2.5rem;
+        }
+        & p{
+            font-size: 1.3rem;
+        }
+        
+    }
+    .skills-Box {
+        margin-left: 1rem;
+    }
+}
+@include Tablet{
+    .skills-ProgressBarContainer{
+        width: 30rem;
+    }
+    .skills{
+        flex-direction: column;
+        width: 40rem;
+        margin: 0 auto;
+    }
+    .skills-Hearts{
+        & img{
+            height: 2.5rem;
+        }
+        & p{
+            font-size: 1.3rem;
+        }
+        
+    }
+    .skills-Box {
+        margin-left: 1rem;
+        & img{
+            height: 7rem;
+        }
+    }
+    #Icon{
+        height: 5rem;
+    }
+    .gridItem .item-ToolText{
+        transform: translateY(.1rem) translateX(-8.5rem);
+    }
+    #IconText{
+        transform: translateX(-8rem) translateY(.1rem);
+    }
+}
+@include Phone-Large{
+    .skills-Name{
+        transform: translateY(1rem);
+        & img{
+            height: 8rem;
+        }
+    }
+    .skills-ProgressBarContainer{
+        width: 15rem;
+    }
+    .skills{
+        flex-direction: column;
+        width: 25rem;
+        margin: 0 auto;
+    }
+    .skills-Hearts{
+        & img{
+            height: 1.5rem;
+        }
+        & p{
+            font-size: 1.3rem;
+        }
+        
+    }
+    .skills-Box {
+        margin-left: 1rem;
+        & img{
+            height: 4rem;
+        }
+    }
+    #Icon{
+        height: 3rem;
+        transform: translateY(.5rem);
+    }
+    .gridItem .item-ToolText{
+        width: 7rem;
+        transform: translateY(-1rem) translateX(-6.5rem);
+    }
+    #IconText{
+        transform: translateX(-6rem) translateY(-1rem);
+    }
+}
+@include Phone-Medium{
+    .skills{
+        width: 20rem;
+    }
+    .skills-Hearts{
+        & img{
+            height: 1.5rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+        
+    }
+    .skills-ProgressBarContainer{
+        width: 12rem;
+    }
+}
+@include Phone-Small{
+    .skills{
+        width: 19rem;
+    }
+}
