@@ -9,10 +9,10 @@
 }
 .projects-Name{
     text-align: center;
-    margin-top: -6rem;
+    margin-top: -7rem;
     filter: drop-shadow(5px 5px 5px rgb(73, 73, 73));
     & img{
-        height: 10rem;
+        height: 12rem;
     }
 }
 .projects-Descript{
@@ -394,6 +394,46 @@
     }
 }
 @include Phone-Small{
+    .projects-Descript{
+        width: 55%;
+    }
+    .projects-Container{
+        & .slider-Img{
+            height: 13rem;
+            width: 13rem;
+        }
+    }
+    .popText{
+        height: 13rem;
+        width: 13rem;
+    }
+    .detailBox{
+        width: 12rem;
+        height: 15rem;
+        margin-top: -7rem;
+        & span{
+            font-size: 1.5rem;
+        }
+    }
+    .projects-Box{
+        width: 13.5rem;
+        transform: translateY(12rem);
+    }
+    .detail {
+        & a{
+            transform: translateY(-.5rem);
+        }
+    }
+    .toolBox img{
+        height: 4rem;
+        width: 4rem;
+        transform: translateY(.5rem);
+    }
+    .icon img{
+        height: 3rem;
+        width: 3rem;
+        transform: translateY(1rem) translateX(1rem);
+    }
     .joust-Container{
         margin-bottom: 2rem;
     }

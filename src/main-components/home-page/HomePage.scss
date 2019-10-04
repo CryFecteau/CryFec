@@ -1,10 +1,12 @@
 @import '../../sharedScss/media.scss';
 .home-Container{
     padding: 1rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
 }
 .home{
+    overflow: auto;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 3rem 1rem;
@@ -20,8 +22,6 @@
 }
 .home-Hearts{
     text-align: center;
-    margin-top: 1rem;
-    transform: translateY(9rem);
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
     & img{
         margin: 0 .5rem 0 .5rem;
@@ -53,23 +53,21 @@
 }
 @include Phone-Large{
     .home{
-        height: 27rem;
-    }
-    .home-Hearts{
-        transform: translateY(15rem);
+        height: 35rem;
     }
 }
 @include Phone-Medium{
-    .home-Hearts{
-        transform: translateY(16rem);
+    .home{
+        height: 33rem;
     }
 }
 @include Phone-Small{
     .home{
-        height: 33rem;
+        height: 30rem;
         padding: 1rem;
+      
     }
-    .home-Hearts{
-        transform: translateY(20rem);
+    .home-Hearts img{
+        height: 1rem;
     }
 }

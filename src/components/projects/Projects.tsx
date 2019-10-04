@@ -72,7 +72,7 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                     </div>
                                 </div>
                                 <div className='projects-Box'></div>
-                                <div className='detailBox'>
+                                <div className='detailBox detail'>
                                     <span>Stratego</span>
                                     <p>Strategy inspired two player board game.</p>
                                     <a href='https://stratego-57462.firebaseapp.com/'>Delpoy App</a><br />
