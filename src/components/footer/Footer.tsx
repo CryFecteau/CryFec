@@ -21,9 +21,9 @@ export class Footer extends Component<IFooterProps, IFooterState>{
                     <Link to="/contacts" className='footer-btn'>Contacts</Link>
                 </div>
                 <div className="footer-Links">
-                    <a href='https://www.linkedin.com/in/crystal-fecteau/'>Linkedin</a>
-                    <a href='https://github.com/CryFecteau'>GitHub</a>
-                    <a href='https://docs.google.com/document/d/1-Um12V7WK8lO6fqMMNKAMz8sDQAFjcr46sq5jgWXlVU/edit?usp=sharing'>Resume</a>
+                    <a target='_blank' href='https://www.linkedin.com/in/crystal-fecteau/'>Linkedin</a>
+                    <a target='_blank' href='https://github.com/CryFecteau'>GitHub</a>
+                    <a target='_blank' href='https://docs.google.com/document/d/1S61E9ex96S6Fe_CR1XwW8YPUDYG3UeCpF-SXa733k6U/edit?usp=sharing'>Resume</a>
                 </div>
             </div>
         )

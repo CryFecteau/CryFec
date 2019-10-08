@@ -35,15 +35,15 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                 <img className='slider-Img' src='assets/screenShots/joust3.png' alt='screen shot of joust game' />
                                 <div className='overlay'>
                                     <div className='popText'>
-                                        <a href='https://dtpc22.github.io/joust/'>Jump Back In Time To The 80's</a>
+                                        <a target="_blank" href='https://dtpc22.github.io/joust/'>Jump Back In Time To The 80's</a>
                                     </div>
                                 </div>
                                 <div className='projects-Box'></div>
                                 <div className='detailBox'>
                                     <span>Joust</span>
                                     <p>80's inspired two player aracde game.</p>
-                                    <a href='https://dtpc22.github.io/joust/'>Deployed App</a><br />
-                                    <a href='https://github.com/CryFecteau/joust'>GitHub Code</a>
+                                    <a target="_blank" href='https://dtpc22.github.io/joust/'>Deployed App</a><br />
+                                    <a target="_blank" href='https://github.com/CryFecteau/joust'>GitHub Code</a>
                                 </div>
                             </div>
                             <div className="toolBox">
@@ -68,15 +68,15 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                 <img className='slider-Img' src='assets/screenShots/stratego3.png' alt='screen shot of stratego game' />
                                 <div className='overlay'>
                                     <div className='popText'>
-                                        <a href='https://stratego-57462.firebaseapp.com/'>Challegne Your Friends To A Strategy Game</a>
+                                        <a target="_blank" href='https://stratego-57462.firebaseapp.com/'>Challegne Your Friends To A Strategy Game</a>
                                     </div>
                                 </div>
                                 <div className='projects-Box'></div>
                                 <div className='detailBox detail'>
                                     <span>Stratego</span>
                                     <p>Strategy inspired two player board game.</p>
-                                    <a href='https://stratego-57462.firebaseapp.com/'>Delpoy App</a><br />
-                                    <a href='https://github.com/CryFecteau/stratego'>GitHub code</a>
+                                    <a target="_blank" href='https://stratego-57462.firebaseapp.com/'>Delpoy App</a><br />
+                                    <a target="_blank" href='https://github.com/CryFecteau/stratego'>GitHub code</a>
                                 </div>
                             </div>
                             <div className="toolBox">
@@ -109,15 +109,15 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                 <img className='slider-Img' src='assets/screenShots/zombit3.png' alt='screen shot of zombit tavern' />
                                 <div className='overlay'>
                                     <div className='popText'>
-                                        <a href='https://cryfecteau.github.io/tap-room/'>Join The Zombies For A Drink</a>
+                                        <a target="_blank" href='https://cryfecteau.github.io/tap-room/'>Join The Zombies For A Drink</a>
                                     </div>
                                 </div>
                                 <div className='projects-Box'></div>
                                 <div className='detailBox detail'>
                                     <span>Zombit Tavern</span>
                                     <p>Web-site that mixes love the of zombies and beer together.</p>
-                                    <a href='https://cryfecteau.github.io/tap-room/'>Deployed App</a><br />
-                                    <a href='https://github.com/CryFecteau/tap-room'>GitHub Code</a>
+                                    <a target="_blank" href='https://cryfecteau.github.io/tap-room/'>Deployed App</a><br />
+                                    <a target="_blank" href='https://github.com/CryFecteau/tap-room'>GitHub Code</a>
                                 </div>
                             </div>
                             <div className="toolBox">
@@ -146,15 +146,15 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                 <img className='slider-Img' src='assets/screenShots/dnd3.png' alt='screen schot of dnd creator' />
                                 <div className='overlay'>
                                     <div className='popText'>
-                                        <a href='https://cryfecteau.github.io/DnD/'>Create Your DnD Character</a>
+                                        <a target="_blank" href='https://cryfecteau.github.io/DnD/'>Create Your DnD Character</a>
                                     </div>
                                 </div>
                                 <div className='projects-Box'></div>
                                 <div className='detailBox detail'>
                                     <span>DnD Genarator</span>
                                     <p>DnD character genarator for thier class and stats.</p>
-                                    <a href='https://github.com/CryFecteau/DnD'>Delpoy App</a><br />
-                                    <a href='https://cryfecteau.github.io/DnD/'>GitHub Code</a>
+                                    <a target="_blank" href='https://cryfecteau.github.io/DnD/'>Delpoy App</a><br />
+                                    <a target="_blank" href='https://github.com/CryFecteau/DnD'>GitHub Code</a>
                                 </div>
                             </div>
                             <div className="toolBox">
@@ -171,6 +171,61 @@ export class Projects extends Component<IProjectsProps, IProjectsState>{
                                     <span className='item-ToolTextProjs'>JavaScript</span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="timeline-Container">
+
+                    <div className="timeline-Header">
+                        <h2>Steps taken to produce a project</h2>
+                    </div>
+                    <div className="timeline-Bar"></div>
+                    <div className="timeline">
+                        <div className="timeline-Step">
+                            <h3>Start!</h3>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Strategize</h3>
+                            <p>Discuss ideas and goals</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Research</h3>
+                            <p>Research if idea has been made</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Outline/Sketch</h3>
+                            <p>Break how the application should function and look</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Server-Side</h3>
+                            <p>Program necessary logic</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Test</h3>
+                            <p>Test functionality</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Design</h3>
+                            <p>Create/gather assets</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Review</h3>
+                            <p>Disscus/approve assets</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Client-Side</h3>
+                            <p>Input design and conncet to server-side</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Test</h3>
+                            <p>Test the functionality with UI/UX</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Refactor</h3>
+                            <p>Refactor Client/Server-Side and test</p>
+                        </div>
+                        <div className="timeline-Step">
+                            <h3>Launch!</h3>
                         </div>
                     </div>
                 </div>

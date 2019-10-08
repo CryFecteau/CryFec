@@ -21,11 +21,11 @@ export class StartPage extends Component<IStartPageProps, IStartPageState>{
                         <img src='assets/pixelArt/stromCloud3.png' alt='pixel storm cloud' />
                         <img src='assets/pixelArt/stromCloud1.png' alt='pixel storm cloud' />
                     </div>
-                    <Link to='/home'>
-                        <div className="startPage-SunSet">
+                    <div className="startPage-SunSet">
+                        <Link to='/home'>
                             <img className="startPage-CitySunSet" src='assets/pixelArt/city.png' alt="pixel city with a calming sunset" />
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                     <div className='startPage-Opitions'>
                         <Link to='/home' className='link'>Start</Link>
                         <Link to='/quitter' className='link'>Quit</Link>

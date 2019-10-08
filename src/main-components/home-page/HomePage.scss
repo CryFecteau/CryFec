@@ -9,10 +9,10 @@
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding: 3rem 1rem;
-    margin: 1rem;
+    padding: 3rem 3rem;
+    margin: 1rem 1rem -6rem 1rem;
     height: 20rem;
-    width: 30rem;
+    width: 50rem;
     transform: translateY(-15rem);
     background-color:rgba(139, 139, 139, 0.274);
     border: 5px solid rgb(0, 0, 0);
@@ -54,6 +54,7 @@
 @include Phone-Large{
     .home{
         height: 35rem;
+        padding: 1rem;
     }
 }
 @include Phone-Medium{
@@ -68,6 +69,6 @@
       
     }
     .home-Hearts img{
-        height: 1rem;
+        height: 1.3rem;
     }
 }

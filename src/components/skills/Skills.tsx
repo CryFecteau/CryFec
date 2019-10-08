@@ -13,26 +13,17 @@ export class Skills extends Component<ISkillsProps, ISkillsState>{
                 <div className='skills-Name'>
                     <img src='assets/pixelArt/stats.png' alt='pixel drawing of the word stats' />
                 </div>
+                <span className='skills-ExperienceBoxHeader'>Level 10 Front-End Engineer</span>
                 <div className="skills">
-                    <div className='skills-ExperienceBox'>
-                        <span className='skills-ExperienceBoxHeader'>Level 10 Front-End Engineer</span>
+                    <div className="skills-Box">
                         <h3 className='skills-BoxHeader'>Experience:</h3>
                         <div className='skills-ProgressBarContainer'>
                             <div className='skills-ProgressBar'>
-                                <span className='skills-ProgressBarFill'><p>65%</p></span>
+                                <span className='skills-ProgressBarFill'>
+                                    <p>level 11</p>
+                                </span>
                             </div>
                         </div>
-                        <div className="skills-Hearts">
-                            <p>HTML: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/halfHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                            <p>CSS/SCSS: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fourthHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                            <p>JavaScript: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/halfHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                            <p>TypeScript: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fourthHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                            <p>C#: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/halfHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                            <p>Git: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fourthHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
-                        </div>
-                    </div>
-                    <div className="skills-Box">
-                        <span className='skills-BoxHeader'>Skills:</span>
                         <div className="skills-BoxGrid">
                             <div className='gridItem'>
                                 <div className='item-HoverBox'>
@@ -96,7 +87,7 @@ export class Skills extends Component<ISkillsProps, ISkillsState>{
                             </div>
                             <div className='gridItem'>
                                 <div className='item-HoverBox'>
-                                    <img src='assets/icons/Angular.png'alt='pixel art of angular icon' />
+                                    <img src='assets/icons/Angular.png' alt='pixel art of angular icon' />
                                     <span className='item-ToolText'>Angular</span>
                                 </div>
                             </div>
@@ -118,6 +109,17 @@ export class Skills extends Component<ISkillsProps, ISkillsState>{
                                     <span className='item-ToolText'>MySQL</span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className='skills-ExperienceBox'>
+                        <span className='skills-BoxHeader'>Stats:</span>
+                        <div className="skills-Hearts">
+                            <p>Strength: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/halfHeart.png' alt='8bit heart' /> </p>
+                            <p>Creativity: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> </p>
+                            <p>Wisdom: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fourthHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
+                            <p>Confident: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> </p>
+                            <p>Dexterity: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/halfHeart.png' alt='8bit heart' /> </p>
+                            <p>Charisma: <img className='fullHeart' src='assets/pixelArt/fullHeart.png' alt='8bit heart' /> <img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/fullHeart.png' alt='8bit heart' /><img src='assets/pixelArt/emptyHeart.png' alt='8bit heart' /> </p>
                         </div>
                     </div>
                 </div>

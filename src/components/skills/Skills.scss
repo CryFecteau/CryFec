@@ -35,10 +35,11 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    filter: drop-shadow(5px 5px 5px rgb(124, 123, 123));
 }
 .skills-ExperienceBox{
+    margin: 3rem 0 0 1rem;
     padding: 1rem;
-    // margin-left: 2rem;
     & p{
         font-weight: bold;
     }
@@ -63,11 +64,12 @@
 .skills-ProgressBarFill{
     display: block;
     height: 1.5rem;
-    width: 65%;
+    width: 55%;
     background-color: #a565ef;
     border-radius: 3px; 
     & p {
-        transform: translateY(3px) translateX(70%);
+        font-weight: bolder;
+        transform: translateY(3px) translateX(100%);
     } 
 }
 .skills-Hearts{
@@ -84,8 +86,7 @@
 }
 .skills-Box{
     padding: 1rem;
-    overflow: auto;
-    margin-left: 10rem;
+    margin-left: 1rem;
     & img{
         height: 10rem;
         margin-bottom: -1rem;
@@ -217,6 +218,9 @@
         & img{
             height: 8rem;
         }
+    }
+    .skills-ExperienceBox{
+        margin: 0;
     }
     .skills-ProgressBarContainer{
         width: 15rem;
